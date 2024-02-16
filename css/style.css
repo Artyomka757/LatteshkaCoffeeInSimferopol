@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteiner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body {
+    background: url(../img/pngtree-coffee-hot-drink-afternoon-tea-banner-background-image_181987.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #d6d6cf;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #8B4513;
+}
+
+.navbar .menu-links {
+    display: flex;
+    gap: 40px;
+}
+
+
+.navbar .logo {
+    color: black;
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+
+.navbar .logo span {
+    color: black;
+}
+
+
+.hero-section {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.hero-section .content {
+    color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero-section .content h1 {
+    font-size: 3rem;
+    max-width: 600px;
+}
+
+.hero-section .content p {
+    font-weight: 300;
+    max-width: 600px;
+    margin-top: 15px;
+}
+
+.hero-section .content button {
+    background: black;
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-top: 38px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+    color: white;
+}
+
+.hero-section .content button:hover {
+    color: black;
+    background: #8B4513;
+}
+
+#menu-btn {
+    display: none;
+    color: black;
+    cursor: pointer;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#close-menu-btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header.show-mobile-menu::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+    }
+
+    #close-menu-btn,
+    #menu-btn {
+        display: block;
+
+    }
+
+    .navbar .menu-links {
+        position: fixed;
+        left: -260px;
+        top: 0;
+        width: 260px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        padding: 70px 40px 0;
+        transition: left 0.15s ease;
+    }
+
+    .navbar a {
+        color: #000;
+
+    }
+
+    header.show-mobile-menu .navbar .menu-links {
+        left: -0;
+    }
+
+    .hero-section .content {
+        text-align: center;
+
+    }
+
+    .hero-section .content :is(h1, p) {
+        max-width: 100%;
+    }
+
+    .hero-section .content h1 {
+        font-size: 2.3rem;
+        line-height: 60px;
+    }
+
+    .hero-section .content button {
+        padding: 9px 18px;
+    }
+}
+
+
+
+
+
+.coffeeworld {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.cofe {
+    border-radius: 20px;
+    background-color: #7d481a;
+    margin-left: 54px;
+    padding: 15px;
+    height: 450px;
+    color: white;
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nazvanie {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    ;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.opisanie {
+    color: #FFFADA;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0.24px;
+    max-width: 236px;
+}
+
+.kupit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg {
+    background: url(../img/pngtree-coffee-hot-drink-afternoon-tea-banner-background-image_181987.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+button {
+    background: black;
+    padding: 12px 30px;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-top: 38px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.reviews {
+    display: flex;
+    padding-top: 5px;
+    width: 3000px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 3px;
+
+}
+
+
+
+
+.address {
+    margin: 40px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-info img {
+    height: 400px;
+    width: 400px;
+    border-radius: 25px;
+    display: flex;
+}
+
+.section-info__image-with-text {
+    background-color: white;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.section-info2 img {
+    height: 400px;
+    width: 600px;
+    border-radius: 25px;
+    display: flex;
+}
+
+.map img{
+    display: flex;
+    border-radius: 25px;
+    
+}
+.section-info__image-with-text2 {
+    background-color: white;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: larger;
+}
+.cofe img{
+    width: 230px;
+    height: 150px;
+}
